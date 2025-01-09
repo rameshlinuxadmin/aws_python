@@ -52,12 +52,3 @@ class ec2_resource:
                 return z
             else:
                 print(f"{i.instance_id} is in the state of {i.state['Name']}")
-
-
-
-ec2_resource.info()
-ec2_resource.instance_reboot()
-x = ec2_resource.instance_start()
-y = ec2_resource.instance_stop()
-ec2_resource.instance_stopping()
-ec2_resource.instance_terminate()
