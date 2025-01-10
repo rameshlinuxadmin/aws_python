@@ -1,0 +1,14 @@
+{
+    "Amazonlinux_instance": [
+        {
+        "ami_image":"ami-05576a079321f21f8",
+        "vpc-id":"vpc-063a84743fc3c4c59",
+        "securitygroups":"sg-07d6b6ecbe98f539f",
+        "instance-type":"t2.micro",
+        "instance-name":"demoserver",
+        "keypair":"ec2_key",
+        "MaxInstanceCount": 1,
+        "MinInstanceCount": 1
+        }
+    ]
+}
