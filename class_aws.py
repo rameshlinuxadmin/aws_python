@@ -9,6 +9,7 @@ class ec2_resource:
             print(f"Instance type = {i.instance_type}")
             print(i.block_device_mappings)
             print(i.network_interfaces)
+            print(f"{i.instance_id} is in the state of {i.state['Name']}")
 
     def instance_start():
         for i in ec2.instances.all():
@@ -45,9 +46,9 @@ class ec2_resource:
         
     def instance_terminate():
         for i in ec2.instances.all():
-            if i.state['Name'] == 'running' | 'stopped' | 'stopping':
+            if i.state['Name'] == 'stopped':
                 i.terminate()
-                print(f"{i.instance_id} reboot process is initiated")
+                print(f"{i.instance_id} terminating instance is initiated")
                 z = print(f"{i.instance_id} is {i.state['Name']}")
                 return z
             else:
