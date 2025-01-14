@@ -47,6 +47,8 @@ data = json.load(f)
 for i in data['marvel']:
     print(f" Name of Ironman is {i['Ironman']}")
     print(f" Name of Captain America is {i['Captain America']}")
+    print(f" Name of Spiderman is {i['Spiderman']}")
+    print(f" Name of Thor is {i['Thor']}")
 
 # Closing file
 f.close()

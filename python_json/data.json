@@ -2,7 +2,9 @@
     "marvel": [ 
         {
         "Ironman":"Johnny Depp",
-        "Captain America":"Steve Rogers" 
+        "Captain America":"Steve Rogers", 
+        "Spiderman":"Tom Hollands",
+        "Thor":"Chris Hemsworth" 
         }
     ]
 }
